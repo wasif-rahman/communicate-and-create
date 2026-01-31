@@ -92,6 +92,50 @@
         }
         .metric-value { font-size: 2.5rem; font-weight: 800; }
         .metric-label { font-size: 0.875rem; opacity: 0.9; margin-top: 8px; }
+               /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            body { padding: 1.5rem 0; }
+            .case-study-container { margin: 0 1rem; }
+            .header-bg { padding: 3rem 2rem; }
+            .p-16 { padding: 2.5rem !important; }
+            .text-6xl { font-size: 2.5rem !important; }
+            .text-2xl { font-size: 1.25rem !important; }
+            .section-title { font-size: 1.75rem; }
+            .subsection-title { font-size: 1.25rem; }
+
+            .grid.grid-cols-2,
+            .grid.grid-cols-3 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .flex.gap-12,
+            .flex.gap-8,
+            .flex.gap-6 {
+                flex-wrap: wrap;
+            }
+
+            .w-1\/3,
+            .w-2\/3 {
+                width: 100% !important;
+            }
+
+            .flow-container { flex-wrap: wrap; justify-content: center; gap: 16px; }
+            .flow-line { display: none; }
+            .flow-step { width: 220px; }
+            .flow-step.decision { transform: none; width: 220px; height: auto; margin: 0; }
+            .flow-step.decision .content { transform: none; }
+        }
+
+        @media (max-width: 640px) {
+            .case-study-container { margin: 0 0.5rem; }
+            .header-bg { padding: 2.5rem 1.5rem; }
+            .p-16 { padding: 2rem !important; }
+            .section-header { padding-left: 16px; border-left-width: 4px; }
+            .section-title { font-size: 1.5rem; }
+            .section-subtitle { font-size: 0.95rem; }
+            .metric-value { font-size: 2rem; }
+            .color-swatch { height: 64px; }
+            .flow-step { width: 100%; max-width: 260px; }
     </style>
 </head>
 <body class="py-10">
@@ -677,3 +721,4 @@
 </body>
 
 </html>
+
